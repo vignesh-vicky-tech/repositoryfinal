@@ -1,0 +1,13 @@
+---
+apiVersion: compositions.io/v1alpha1
+kind: InstanceClaim
+metadata:
+  name: "repo-final-ec2"
+spec:
+  parameters:
+    region: "us-east-1"
+    ami: "ami-06aa3f7caf3a30282"
+    instanceType: "t2.small"
+    keyName: "repo-final-key"
+  compositionRef:
+    name: ec2-instance

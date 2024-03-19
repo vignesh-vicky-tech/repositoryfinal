@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: argo
+  description: An example of a Backstage application.
+  # Example for optional annotations
+  links:
+    - url: https://172.30.46.16:32145
+      title: ArgoCD Dashboard
+      icon: dashboard
+  annotations:
+      argocd/app-namespace: argocd
+      github.com/project-slug: vignesh-vicky-tech/argocd-workflows
+  #   backstage.io/techdocs-ref: dir:.
+spec:
+  type: service
+  owner: guests
+  lifecycle: experimental
+
+
